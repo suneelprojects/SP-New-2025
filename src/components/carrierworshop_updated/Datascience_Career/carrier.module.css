@@ -1,0 +1,846 @@
+.careerWorkshop {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Section Title with smaller underline */
+.sectionTitleWithUnderline {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #0c0c0c;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.sectionTitleWithUnderline::after {
+  content: "";
+  position: absolute;
+  width: clamp(200px, 40vw, 300px);
+  height: 2px;
+  background-color: #252a2f;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+/* Numbered arrow styles */
+.numberArrow {
+  background-color: #386641;
+  color: white;
+  font-weight: bold;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  width: clamp(35px, 10vw, 40px);
+  height: clamp(45px, 12vw, 50px);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.numberArrowText {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Text below the numbered list */
+.webinarForYouText {
+  text-align: center;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-weight: 700;
+  margin-top: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Hero Section */
+.heroImageSection {
+  position: relative;
+  width: 100%;
+  min-height: clamp(60vh, 80vw, 100vh);
+  overflow: hidden;
+}
+
+.heroImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(60vh, 80vw, 100vh);
+}
+
+.heroBackgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.622);
+}
+
+.heroOverlayTitle {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.heroOverlaySubtitle {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  color: rgb(249, 248, 248);
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.heroOverlayNote {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: white;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.mentorName {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: bold;
+  color: #ffc505;
+}
+
+/* Webinar Scheduling Section */
+.webinarScheduleSection {
+  padding: clamp(20px, 5vw, 40px) 0;
+}
+
+.webinarText {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 900;
+  text-align: center;
+}
+
+.webinarInfo {
+  background: rgba(255, 255, 255, 0.1);
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.date {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: bold;
+  color: #ffc505;
+  margin: 1rem 0;
+}
+
+.registerBtn {
+  background: black;
+  color: white;
+  padding: clamp(10px, 3vw, 15px) clamp(50px, 15vw, 100px);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+.registerBtn:hover {
+  background: #d7ad23;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.limitedSeats {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #0b0b0b;
+  margin-top: 0.5rem;
+}
+
+.webinarImageContainer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.webinarImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.2); */
+}
+
+/* Target Audience Section */
+.targetAudience {
+  padding: clamp(40px, 10vw, 80px) 0;
+  background: #f8f9fa;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #080808;
+}
+
+/* Discover Section */
+.discoverSection {
+  padding: clamp(40px, 10vw, 80px) 0;
+  background: #090820f7;
+  color: white;
+}
+
+.discoverSection .sectionTitle {
+  color: white;
+}
+
+.discoverList {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.discoverItem {
+  background: #219a52;
+  color: white;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.discoverItem:hover {
+  background: #16bf5afb;
+  color: black;
+  transform: translateX(10px);
+}
+
+.discoverItem::before {
+  content: '🔶';
+  margin-right: 1rem;
+  color: #f39c12;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  padding: clamp(40px, 10vw, 80px) 0;
+  background: #f8f9fa;
+}
+
+.testimonialWrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* height: 200px; */
+}
+
+.testimonialTrack {
+  display: flex;
+  animation: scrollTestimonials 20s linear infinite;
+  width: max-content;
+}
+
+.testimonialItem {
+  min-width: clamp(80px, 20vw, 120px);
+  height: clamp(100px, 20vw, 350px);
+  margin: 0 clamp(10px, 2vw, 15px);
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.testimonialImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialWrapper:hover .testimonialTrack {
+  animation-play-state: paused;
+}
+
+@keyframes scrollTestimonials {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Host Section */
+.hostSection {
+  padding: clamp(40px, 10vw, 80px) 0;
+  background: white;
+}
+
+.hostImageContainer {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hostImage {
+  width: clamp(180px, 40vw, 350px);
+  height: clamp(150px, 40vw, 350px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #27ae60;
+}
+
+.hostInfo h3 {
+  color: #f9c005;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hostInfo p {
+  color: #070707;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.hostStats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.statItem {
+  text-align: center;
+  flex: 1 1 100px;
+}
+
+.statItem strong {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.statItem span {
+  color: #2c3e50;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+/* Bonus Section */
+.bonusSection {
+  padding: clamp(30px, 8vw, 50px) 0;
+  background: #386641;
+  color: white;
+  text-align: center;
+}
+
+.bonusSection .sectionTitle {
+  color: white;
+}
+
+.bonusText {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  max-width: 90%;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+/* Awards Section */
+.awardsSection {
+  padding: clamp(40px, 10vw, 80px) 0;
+  background: #d2def544;
+  text-align: center;
+}
+
+.awardImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* border-radius: 100px; */
+  margin: 0 auto;
+  max-height: clamp(150px, 50vw, 650px);
+}
+
+/* FAQ Section */
+.faqSection {
+  padding: clamp(40px, 10vw, 80px) 0;
+  background: rgba(168, 166, 166, 0.429);
+}
+
+.faqContainer {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.faqItem {
+  margin-bottom: 1rem;
+  border: 1px solid #219a52;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  background: #f8f9fa;
+  border: none;
+  text-align: left;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faqQuestion:hover {
+  background: #e9ecef;
+}
+
+.faqQuestionActive {
+  background: #27ae60 !important;
+  color: white !important;
+}
+
+.faqIcon {
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+  transition: transform 0.3s ease;
+  color: #666;
+}
+
+.faqQuestionActive .faqIcon {
+  color: white;
+}
+
+.faqIconRotated {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: white;
+}
+
+.faqAnswerOpen {
+  max-height: 250px;
+}
+
+.faqAnswerContent {
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  border-top: 1px solid #e9ecef;
+}
+
+/* Registration Modal */
+.registrationModal {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.registrationModal .modal-content {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.registrationModal .modal-header {
+  border-bottom: 1px solid #34495e;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.registrationModal .modal-title {
+  color: #f39c12;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.registrationModal .btn-close {
+  filter: invert(1);
+}
+
+.registrationModal .modal-body {
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.registrationModal .form-control,
+.registrationModal .form-select {
+  background: white;
+  border: 1px solid #ddd;
+  padding: clamp(10px, 2.5vw, 12px);
+  border-radius: 5px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.registrationModal .form-control:focus,
+.registrationModal .form-select:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 0 0.2rem rgba(39, 174, 96, 0.25);
+}
+
+.bookNowBtn {
+  background: #8e44ad;
+  color: white;
+  padding: clamp(10px, 2.5vw, 15px);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.bookNowBtn:hover {
+  background: #7d3c98;
+  transform: translateY(-2px);
+}
+.mentordescription1{
+  /* font-size: x-large; */
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .sectionTitleWithUnderline::after {
+    width: clamp(150px, 35vw, 300px);
+  }
+
+  .heroOverlayTitle {
+    font-size: clamp(1.8rem, 4.5vw, 2.2rem);
+  }
+
+  .registerBtn {
+    padding: clamp(10px, 3vw, 12px) clamp(40px, 12vw, 80px);
+  }
+
+  .hostImage {
+    width: clamp(150px, 35vw, 350px);
+    height: clamp(150px, 35vw, 350px);
+  }
+}
+
+@media (max-width: 992px) {
+  .webinarText {
+    font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+  }
+
+  .date {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+  }
+
+  .awardImage {
+    max-height: clamp(300px, 60vw, 400px);
+  }
+
+  .hostStats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Meet Your Host Section - small screen image on top, text below */
+  .hostSection .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .hostSection .col-12.col-lg-4 {
+    order: 1;
+  }
+  .hostSection .col-12.col-lg-8 {
+    order: 2;
+  }
+
+  .testimonialItem {
+    min-width: clamp(150px, 30vw, 200px);
+    height: clamp(200px, 40vw, 450px);
+    margin: 0 clamp(8px, 2vw, 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroImageSection {
+    min-height: clamp(50vh, 70vw, 80vh);
+  }
+
+  .heroOverlayTitle {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  .heroOverlaySubtitle {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+
+  .heroOverlayNote {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  }
+
+  .webinarInfo {
+    padding: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .webinarImage {
+    max-width: 90%;
+  }
+
+  .numberArrow {
+    width: clamp(30px, 8vw, 35px);
+    height: clamp(40px, 10vw, 45px);
+  }
+
+  .numberArrowText {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+
+  .discoverItem {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    padding: clamp(0.8rem, 2vw, 1.2rem);
+  }
+
+  .testimonialItem {
+    min-width: clamp(150px, 30vw, 200px);
+    height: clamp(200px, 40vw, 450px);
+    margin: 0 clamp(8px, 2vw, 12px);
+  }
+
+  .hostInfo h3 {
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  }
+
+  /* Meet Your Host Section - small screen image on top, text below */
+  .hostSection .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .hostSection .col-12.col-lg-4 {
+    order: 1;
+  }
+  .hostSection .col-12.col-lg-8 {
+    order: 2;
+  }
+
+  .statItem strong {
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  }
+
+  .statItem span {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+
+  .bonusText {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+
+  .faqQuestion {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    padding: clamp(0.8rem, 2vw, 1.2rem);
+  }
+
+  .faqAnswerContent {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    padding: clamp(0.8rem, 2vw, 1.2rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .heroImageSection {
+    min-height: clamp(40vh, 60vw, 70vh);
+  }
+
+  .heroOverlayTitle {
+    font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+  }
+
+  .heroOverlaySubtitle {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+
+  .heroOverlayNote {
+    font-size: clamp(0.6rem, 1.8vw, 0.8rem);
+  }
+
+  .sectionTitleWithUnderline::after {
+    width: clamp(100px, 30vw, 200px);
+  }
+
+  .webinarText {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .date {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  }
+
+  .registerBtn {
+    padding: clamp(8px, 2.5vw, 10px) clamp(30px, 10vw, 60px);
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  .limitedSeats {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+
+  .targetAudience,
+  .discoverSection,
+  .testimonialsSection,
+  .hostSection,
+  .bonusSection,
+  .awardsSection,
+  .faqSection {
+    padding: clamp(30px, 8vw, 50px) 0;
+  }
+
+  .numberArrow {
+    width: clamp(25px, 7vw, 30px);
+    height: clamp(35px, 9vw, 40px);
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  .numberArrowText {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+
+  .webinarForYouText {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+
+  .discoverItem {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    padding: clamp(0.7rem, 2vw, 1rem);
+  }
+
+  .testimonialItem {
+    min-width: clamp(120px, 25vw, 160px);
+    height: clamp(180px, 35vw, 350px);
+    margin: 0 clamp(7px, 1.5vw, 10px);
+  }
+
+  .hostImage {
+    width: clamp(120px, 30vw, 250px);
+    height: clamp(120px, 30vw, 250px);
+  }
+
+  .hostInfo h3 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+  }
+
+  .hostInfo p {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+
+  .statItem strong {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+  }
+
+  .statItem span {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+
+  .bonusText {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+
+  .awardImage {
+    max-height: clamp(200px, 50vw, 300px);
+  }
+
+  .faqQuestion {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    padding: clamp(0.7rem, 2vw, 1rem);
+  }
+
+  .faqAnswerContent {
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
+    padding: clamp(0.7rem, 2vw, 1rem);
+  }
+
+  .registrationModal .modal-dialog {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .registrationModal .modal-title {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+  }
+
+  .registrationModal .modal-body {
+    padding: clamp(0.8rem, 2.5vw, 1.2rem);
+  }
+
+  .registrationModal .form-control,
+  .registrationModal .form-select {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    padding: clamp(8px, 2vw, 10px);
+  }
+
+  .bookNowBtn {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: clamp(8px, 2vw, 10px);
+  }
+}
+@media screen and (max-width:992px) {
+  .hostImage{
+    transform: translateX(110px);
+    /* width: ; */
+  }
+
+  /* Meet Your Host Section - small screen image on top, text below */
+  .hostSection .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .hostSection .col-12.col-lg-4 {
+    order: 1;
+  }
+  .hostSection .col-12.col-lg-8 {
+    order: 2;
+  }
+}
+@media screen and (max-width:992px){
+  .webinarImage{
+    transform: translateX(40px);
+  }
+  
+  
+}
+@media screen and (max-width: 992px) {
+  .mentor{
+    transform: translateX(70px);
+  }
+  
+}
